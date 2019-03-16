@@ -3,7 +3,7 @@ sample updating xml config using apache commons
 
 
 Update of the xml file from the other xml file with the https://commons.apache.org/proper/commons-configuration/userguide_v1.10/howto_xml.html
-xPath's values and keys
+xPath's values and keys 
 ==================
 
 Purpose

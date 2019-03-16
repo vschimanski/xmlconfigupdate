@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UpdateConfig>
-    <addNewChildToRootElement>
+    <addNewChildToRootElement> 
     <service name="acceptChangesLTA" class="core.service.AcceptChangesOnLTA"
         type="planned" plan="0 * * * * ?" enable="false">
         <parameters lta.batch.count="10" accept.merge_patients="false" accept.move_study="false"

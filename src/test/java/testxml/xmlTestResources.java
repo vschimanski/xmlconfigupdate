@@ -9,7 +9,7 @@ import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.junit.Test;
 
-public class xmlTestResources {
+public class xmlTestResources { 
 	
 	@SuppressWarnings("unused")
     @Test

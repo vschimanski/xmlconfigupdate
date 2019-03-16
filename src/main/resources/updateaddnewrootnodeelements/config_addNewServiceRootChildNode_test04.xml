@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UpdateConfig>
-    <addNewChildToRootElement>
+    <addNewChildToRootElement> 
         <service name="rsclient" class="core.RESTServerMain" type="server" enable="false">
             <parameters rest.network.host="*" rest.network.http.port="9895"
                 rest.services.sendchanges.username="restclient_hahaha"

@@ -5,7 +5,7 @@ import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.junit.Test;
 
-public class xmlParamArgsTest {
+public class xmlParamArgsTest { 
 
     final String XML_DEFAULT = "src//main//resources//updateconfig//config_update.xml";
     final String XML_CONFIG_DEFAULT = "src//main//resources//updateconfig//config.xml";
