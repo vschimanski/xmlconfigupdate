@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UpdateConfig>
+    <addNewChildToRootElement>
+        <blahtest enable-tcp="true" host="localhost" port="3370" enable-password="false"
+            password-file="conf/jmx-password.properties" access-file="conf/jmx-access.properties"/>        
+    </addNewChildToRootElement>
+</UpdateConfig>
+
+<!-- 
+<addNewChildToRootElement>
+        <blahtest enable-tcp="true" host="localhost" port="3370" enable-password="false"
+            password-file="conf/jmx-password.properties" access-file="conf/jmx-access.properties"/>        
+    </addNewChildToRootElement>   
+ -->

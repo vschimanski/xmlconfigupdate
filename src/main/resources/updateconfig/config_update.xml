@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<UpdateConfig>
+    
+    
+    <addNewElementsAndValues>
+        
+        
+        
+        
+    </addNewElementsAndValues>
+    
+    <updateExistingElementsAndValues>
+        
+         <!-- tested on Wildfly16 configuration, works -->>
+           <element>
+            <xPathKey>profile(0).subsystem(0).periodic-rotating-file-handler(0).formatter(0).named-formatter[@name]</xPathKey>            
+             <!--<xPathObjValue>PATTERN_TEST_CONFIG_UPDATED</xPathObjValue>             >>>> error-->
+             <xPathObjValue>COLOR-PATTERN-TEST</xPathObjValue>
+        </element>
+        
+           <element>
+            <xPathKey>profile(0).subsystem(0).logger(1).level[@name]</xPathKey>            
+            <xPathObjValue>DEBUG</xPathObjValue>            
+        </element>
+        
+        <!-- 
+        Example:
+        
+                 xPathKey  profile(0).subsystem(0).periodic-rotating-file-handler(0).formatter(0).named-formatter[@name]
+                 xPathObjValue PATTERN_TEST_CONFIG_UPDATED >>>> test with WildFly 16 >>> server error
+                 change to >>> COLOR-PATTERN should work.
+                    
+                    config: PATTERN will be changed to PATTERN_TEST_CONFIG_UPDATED
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        
+                 xPathKey    profile(0).subsystem(0).logger(1).level[@name]
+                 xPathObjValue DEBUG
+                 
+                config: WARN will be changed to  DEBUG
+                    <logger category="io.jaegertracing.Configuration">
+                        <level name="WARN"/>
+                    </logger>            
+        -->      
+        
+        
+ 
+        
+        
+        
+        
+        
+    
+    
+      
+        
+        
+    </updateExistingElementsAndValues>
+    
+
+
+
+
+    <deleteExistingElementsAndValues>        
+        
+        <!-- 
+            Example:
+            
+        -->
+        
+        
+    </deleteExistingElementsAndValues>
+    
+    
+    
+    
+</UpdateConfig>
+

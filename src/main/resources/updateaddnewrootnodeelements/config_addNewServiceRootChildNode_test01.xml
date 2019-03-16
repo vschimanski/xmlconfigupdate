@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UpdateConfig>
+    <addNewChildToRootElement>
+    <service name="acceptChangesLTA" class="core.service.AcceptChangesOnLTA"
+        type="planned" plan="0 * * * * ?" enable="false">
+        <parameters lta.batch.count="10" accept.merge_patients="false" accept.move_study="false"
+            accept.move_series="false" accept.move_images="false" accept.create_patient="false"
+            accept.update_patient="false" accept.shred_patient="false"
+            accept.shred_study="false" accept.shred_series="false" accept.shred_image="false"/>
+        <element> value key </element>
+    </service>
+    </addNewChildToRootElement>
+</UpdateConfig>
+
+<!-- 
+<service name="acceptChangesLTA" class="core.service.AcceptChangesOnLTA"
+        type="planned" plan="0 * * * * ?" enable="false">
+        <parameters lta.batch.count="10" accept.merge_patients="false" accept.move_study="false"
+            accept.move_series="false" accept.move_images="false" accept.create_patient="false"
+            accept.update_patient="false" accept.shred_patient="false"
+            accept.shred_study="false" accept.shred_series="false" accept.shred_image="false"/>
+        <element> value ekey </element>
+    </service>
+ -->

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<UpdateConfig>
+    
+    
+    <addNewElementsAndValues>
+        
+        <!-- 
+        IMPORTANT if elements already exit, values will be added ( inadvertanly creating list)
+        ensure this par run only once for old config, not 2x,3x.
+        
+        if you are lazy to code it with XPath's, use 
+        config_addNewServiceRootChildNode , new child node 
+        will be added to the end of the config.
+        
+        
+        also refer to :
+        https://commons.apache.org/proper/commons-configuration/userguide_v1.10/howto_xml.html
+        
+        -->
+        
+        <!-- n = 0 element child "service" does not exist  -->
+        <element>
+            <xPathKey>service(0).[@test01]</xPathKey>            
+            <xPathObjValue>first attribute</xPathObjValue>            
+        </element>
+        
+        
+        <!-- n = 1 socket-binding-group exist will create new one  -->
+        <element>
+            <xPathKey>socket-binding-group(1).[@test01]</xPathKey>            
+            <xPathObjValue>first attr.</xPathObjValue>            
+        </element>
+        
+        
+        
+        <element>
+            <xPathKey>socket-binding-group(1),blah.[@param]</xPathKey>            
+            <xPathObjValue>value</xPathObjValue>            
+        </element>
+        
+        <element>
+            <xPathKey>service(0).[@test55]</xPathKey>            
+            <xPathObjValue>55 attr.</xPathObjValue>            
+        </element>
+        
+        <element>
+            <xPathKey>service(0).element(0)</xPathKey>            
+            <xPathObjValue>elementVlaue</xPathObjValue>            
+        </element>
+        
+        
+        <!--    
+        n = 34 >>> number of root child elements
+        <element>
+            <xPathKey>service(34).[@test01]</xPathKey>            
+            <xPathObjValue>first attribute</xPathObjValue>            
+        </element>
+        
+        <element>
+            <xPathKey>service(33).[@test02]</xPathKey>            
+            <xPathObjValue>second attribute</xPathObjValue>            
+        </element>
+        
+        
+        <element>
+            <xPathKey>service(33).parameters(0)</xPathKey>            
+            <xPathObjValue>first parameter</xPathObjValue>            
+        </element>
+        <element>
+            <xPathKey>service(33).parameters(1)</xPathKey>            
+            <xPathObjValue>second parameter</xPathObjValue>            
+        </element>
+        -->
+        
+        
+    </addNewElementsAndValues>
+    
+    <updateExistingElementsAndValues>
+        
+        
+        
+        <!-- 
+        Example:
+        
+                 xPathKey  profile(0).subsystem(0).periodic-rotating-file-handler(0).formatter(0).named-formatter[@name]
+                 xPathObjValue PATTERN_TEST_CONFIG_UPDATED
+                    
+                    config: PATTERN will be changed to PATTERN_TEST_CONFIG_UPDATED
+                        <formatter>
+                            <named-formatter name="PATTERN"/>
+                        </formatter>
+                        
+                 xPathKey    profile(0).subsystem(0).logger(1).level[@name]
+                 xPathObjValue DEBUG
+                 
+                config: WARN will be changed to  DEBUG
+                    <logger category="io.jaegertracing.Configuration">
+                        <level name="WARN"/>
+                    </logger>            
+        -->      
+        
+        
+    
+    
+      
+        
+        
+    </updateExistingElementsAndValues>
+    
+
+
+
+
+    <deleteExistingElementsAndValues>        
+        
+        <!-- 
+            Example:
+            
+        -->
+        
+        
+    </deleteExistingElementsAndValues>
+    
+    
+    
+    
+</UpdateConfig>
+

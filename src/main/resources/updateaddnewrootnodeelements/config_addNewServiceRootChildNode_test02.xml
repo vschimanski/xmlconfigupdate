@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UpdateConfig>
+    <addNewChildToRootElement>
+        <service name="sendCFSTA" class="core.service.SCFSTA"
+            type="planned" plan="0 * * * * ?" enable="false">
+            <parameters sta.remove_after_success_send="false"/>
+        </service>          
+    </addNewChildToRootElement>
+</UpdateConfig>
+
+<!-- 
+<service name="sendCFSTA" class="core.service.SCFSTA"
+            type="planned" plan="0 * * * * ?" enable="false">
+            <parameters sta.remove_after_success_send="false"/>
+ </service>                 
+</service>
+ -->
