@@ -54,7 +54,7 @@ public class xmlConfigUpdate {
     }
 
     /*
-    @param first xml update file, then xml configuration file that should be updated
+    @param update_XML_path update file, then current_XML_CONFIG configuration file that should be updated
     */
     public static void UpdateConfig(String[] args) throws ConfigurationException, IOException, ParserConfigurationException, org.xml.sax.SAXException, TransformerException {
 
